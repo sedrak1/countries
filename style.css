@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    width: 100%;
+    width: auto;
     background-image: url(background.gif);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,16 +28,16 @@ body {
     padding-left: 1%;
     width: 40%;
     margin: 1% 0 1% 0;
-    height: 60%;
     border: none;
     margin-right: 0.5%;
+    top: 50%;
 }
 .searchButton {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
     margin: 1% 0 1% 0;
-    height: 60%;
+    top: 50%;
     transition: 0.3s;
     background-color: #efefef;
     border: none;
@@ -65,7 +65,7 @@ body {
     margin: 5% 5% 5% 5%;
     border: solid 0.5px;
     border-color: gray;
-    width: 300px;
+    width: 40%;
     height: 30vw;
     line-height: 2vw;
     transition: 0.3s;
@@ -78,4 +78,17 @@ body {
 
 .flag {
     width: 50px;
+}
+
+.countryDescription {
+    /* transition: 0.3s; */
+}
+
+@media only screen and (max-width: 600px) {
+    .searchOutput {
+        padding-top: 10%;
+    }
+    .searchedCountry {
+        width: 50%;
+    }
 }
