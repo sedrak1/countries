@@ -1,6 +1,13 @@
 let searchField = document.querySelector(".search");
 let searchButton = document.querySelector(".searchButton");
 let searchOutput = document.querySelector(".searchOutput");
+
+searchField.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        searchButton.click();
+    }
+});
 searchButton.addEventListener("click", () => {
     searchOutput.innerHTML = "";
     fetch("https://restcountries.eu/rest/v2/all")
